@@ -16,7 +16,7 @@ const COLUMNS: &[&[Section]] = &[&[
             Shortcut::new(
                 "Or Vim shortcuts",
                 Event::ArrowKeysAlt,
-                Schema::Hardcoded(&["H", "J", "K", "L"]),
+                Schema::Hardcoded(&["A", "S", "W", "D"]),
             ),
         ],
     ),
@@ -69,51 +69,6 @@ const COLUMNS: &[&[Section]] = &[&[
                 Schema::Hardcoded(&["Enter"]),
             ),
             Shortcut::new("Cancel", Event::Cancel, Schema::Hardcoded(&["Esc"])),
-        ],
-    ),
-    Section::new(
-        "Displays & Workspaces",
-        &[
-            Shortcut::new(
-                "Move current window up one workspace",
-                Event::MoveWorkspaceAbove,
-                Schema::Hardcoded(&["Super", "Shift", "↑"]),
-            ),
-            Shortcut::new(
-                "Move current window down one workspace",
-                Event::MoveWorkspaceBelow,
-                Schema::Hardcoded(&["Super", "Shift", "↓"]),
-            ),
-            Shortcut::new(
-                "Switch focus to the workspace above",
-                Event::MoveWorkspaceAbove,
-                Schema::Hardcoded(&["Super", "Ctrl", "↑"]),
-            ),
-            Shortcut::new(
-                "Switch focus to the workspace below",
-                Event::MoveWorkspaceBelow,
-                Schema::Hardcoded(&["Super", "Ctrl", "↓"]),
-            ),
-            Shortcut::new(
-                "Move current window to leftward monitor",
-                Event::MoveMonitorLeft,
-                Schema::Hardcoded(&["Super", "Shift", "←"]),
-            ),
-            Shortcut::new(
-                "Move current window to rightward monitor",
-                Event::MoveMonitorRight,
-                Schema::Hardcoded(&["Super", "Shift", "→"]),
-            ),
-            Shortcut::new(
-                "Move current window to upper monitor",
-                Event::MoveMonitorUp,
-                Schema::Hardcoded(&["Super", "Shift", "Ctrl", "↑"]),
-            ),
-            Shortcut::new(
-                "Move current window to lower monitor",
-                Event::MoveMonitorDown,
-                Schema::Hardcoded(&["Super", "Shift", "Ctrl", "↓"]),
-            ),
         ],
     ),
     Section::new(
