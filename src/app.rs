@@ -14,7 +14,7 @@ const COLUMNS: &[&[Section]] = &[&[
                 Schema::Hardcoded(&["←", "↓", "↑", "→"]),
             ),
             Shortcut::new(
-                "Or Vim shortcuts",
+                "Or gamer shortcuts",
                 Event::ArrowKeysAlt,
                 Schema::Hardcoded(&["A", "S", "W", "D"]),
             ),
